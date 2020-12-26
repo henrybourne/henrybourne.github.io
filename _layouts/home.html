@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="headshot">
+    <img src="assets/images/headshot.jpg" />
+    <p>Hi, I’m Henry. I design products.</p>
+  </div>
+
+  <div class="portfolio">
+    <h1>Portfolio</h1>
+
+    <div class="portfolio-item">
+      <img class="portfolio-item-image" src="assets/images/portfolio-lawo-mc236-ui-update.jpg" />
+      <p class="portfolio-item-title">Lawo mc²36 MKII UI Update</p>
+      <p class="portfolio-item-role">Product Designer</p>
+    </div>
+
+    <div class="portfolio-item">
+      <img class="portfolio-item-image" src="assets/images/portfolio-calrec-summa.jpg" />
+      <p class="portfolio-item-title">Calrec Summa</p>
+      <p class="portfolio-item-role">Product Manger & Product Designer</p>
+    </div>
+
+    <div class="portfolio-item">
+      <img class="portfolio-item-image" src="assets/images/portfolio-calrec-brio.jpg" />
+      <p class="portfolio-item-title">Calrec Brio</p>
+      <p class="portfolio-item-role">Product Manger & Product Designer</p>
+    </div>
+  </div>
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <div class="recent-posts">
+      <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+      <ul class="post-list">
+        {%- for post in site.posts -%}
+        <li>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+        </li>
+        {%- endfor -%}
+      </ul>
+
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    </div>
+  {%- endif -%}
+
+</div>
