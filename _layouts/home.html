@@ -1,60 +1,75 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<div class="home">
+  {%- include head.html -%}
 
-  <div class="headshot">
-    <img src="assets/images/headshot.jpg" />
-    <p>Hi, I’m Henry. I design products.</p>
-  </div>
+  <body>
 
-  <div class="portfolio">
-    <h1>Portfolio</h1>
-
-    <div class="portfolio-item">
-      <img class="portfolio-item-image" src="assets/images/portfolio-lawo-mc236-ui-update.jpg" />
-      <p class="portfolio-item-title">Lawo mc²36 MKII UI Update</p>
-      <p class="portfolio-item-role">Product Designer</p>
+    <div class="hero">
+      {%- include header.html -%}
+      <div class="hero-text-container">
+        <h1 class="hero-text">Hi, I’m Henry.<br />I design products.</p>
+      </div>
     </div>
 
-    <div class="portfolio-item">
-      <img class="portfolio-item-image" src="assets/images/portfolio-calrec-summa.jpg" />
-      <p class="portfolio-item-title">Calrec Summa</p>
-      <p class="portfolio-item-role">Product Manger & Product Designer</p>
-    </div>
+    <main class="page-content" aria-label="Content">
 
-    <div class="portfolio-item">
-      <img class="portfolio-item-image" src="assets/images/portfolio-calrec-brio.jpg" />
-      <p class="portfolio-item-title">Calrec Brio</p>
-      <p class="portfolio-item-role">Product Manger & Product Designer</p>
-    </div>
-  </div>
+      <div class="home">
+        <!-- WORKED WITH -->
+        <div class="work-with">
+          <p>I'm proud to have made some great stuff with</p>
+          <div class="work-with-logo-container">
+            <img class="work-with-logo work-with-logo-lawo" src="/assets/images/work-with-logo-lawo.svg" alt="Logo for Lawo">
+            <img class="work-with-logo work-with-logo-bowers-wilkins" src="/assets/images/work-with-logo-bowers-wilkins.svg" alt="Logo for Bowers & Wilkins">
+            <img class="work-with-logo work-with-logo-sky" src="/assets/images/work-with-logo-sky.svg" alt="Logo for Sky">
+            <img class="work-with-logo work-with-logo-calrec" src="/assets/images/work-with-logo-calrec.png" alt="Logo for Calrec">
+            <img class="work-with-logo work-with-logo-lipa" src="/assets/images/work-with-logo-lipa.png" alt="Logo for The Liverpool Institute for Performing Arts">
+          </div>
+        </div>
 
-  {{ content }}
+        <!-- PORTFOLIO -->
+        <div class="portfolio">
+          <h1>Portfolio</h1>
 
-  {%- if site.posts.size > 0 -%}
-    <div class="recent-posts">
-      <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-      <ul class="post-list">
-        {%- for post in site.posts -%}
-        <li>
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
-        </li>
-        {%- endfor -%}
-      </ul>
+          <div class="portfolio-item">
+            <a class="portfolio-item-image" href="portfolio-mc2-ui-update.html"><img src="assets/images/portfolio-lawo-mc2-ui-update.jpg" /></a>
+            <p class="portfolio-item-title"><a href="portfolio-mc2-ui-update.html">Lawo mc² UI Update</a></p>
+            <p class="portfolio-item-role"><a href="portfolio-mc2-ui-update.html">Product Designer</a></p>
+          </div>
 
-      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-    </div>
-  {%- endif -%}
+          <div class="portfolio-item">
+            <a class="portfolio-item-image" href="portfolio-calrec-impulse-core.html"><img src="assets/images/portfolio-calrec-impulse-core.jpg" /></a>
+            <p class="portfolio-item-title"><a href="portfolio-calrec-impulse-core.html">Calrec ImPulse Core</a></p>
+            <p class="portfolio-item-role"><a href="portfolio-calrec-impulse-core.html">Product Manger</a></p>
+          </div>
 
-</div>
+          <div class="portfolio-item">
+            <a class="portfolio-item-image" href="portfolio-calrec-summa.html"><img src="assets/images/portfolio-calrec-summa.jpg" /></a>
+            <p class="portfolio-item-title"><a href="portfolio-calrec-summa.html">Calrec Summa</a></p>
+            <p class="portfolio-item-role"><a href="portfolio-calrec-summa.html">Product Manger & Product Designer</a></p>
+          </div>
+
+          <div class="portfolio-item">
+            <a class="portfolio-item-image" href="portfolio-calrec-summa-core.html"><img src="assets/images/portfolio-calrec-summa-core.jpg" /></a>
+            <p class="portfolio-item-title"><a href="portfolio-calrec-summa-core.html">Calrec Summa Core</a></p>
+            <p class="portfolio-item-role"><a href="portfolio-calrec-summa-core.html">Product Manger</a></p>
+          </div>
+
+          <div class="portfolio-item">
+            <a class="portfolio-item-image" href="portfolio-calrec-brio.html"><img src="assets/images/portfolio-calrec-brio.jpg" /></a>
+            <p class="portfolio-item-title"><a href="portfolio-calrec-brio.html">Calrec Brio</a></p>
+            <p class="portfolio-item-role"><a href="portfolio-calrec-summa.html">Product Manger & Product Designer</a></p>
+          </div>
+        </div>
+
+        {{ content }}
+
+      </div>
+
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

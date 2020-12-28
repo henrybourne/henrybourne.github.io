@@ -94,15 +94,27 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
   color: $text-color-bright;
 }
 
 h1 {
-  font-size: 72px;
-  line-height: 96px;
+  font-size: 64px;
+  line-height: 72px;
   font-weight: 700;
-  margin-bottom: 64px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-top: 64px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-top: 32px;
 }
 
 
@@ -111,11 +123,11 @@ h1 {
  * Links
  */
 a {
-  color: $text-color;
+  color: $text-color-bright;
   text-decoration: underline;
 
   &:visited {
-    color: $text-color
+    color: $text-color-bright;
   }
 
   &:hover {
