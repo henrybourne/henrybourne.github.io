@@ -1,9 +1,10 @@
 ---
 layout: portfolio
 title:  "Calrec Summa Core"
+launched: 2014
 ---
 
-<div class="post-image"><img src="/assets/images/portfolio-calrec-summa-core.jpg"></div>
+<div class="post-image"><img src="/assets/images/portfolio/calrec-summa-core/hero.jpg"></div>
 
 The new core offers many benefits over its predecessor, including improved green credentials; not only does it feature processors tuned for efficiency, it now operates with five percent lower power consumption and fewer fans, which are now more easily accessible for maintenance.
 

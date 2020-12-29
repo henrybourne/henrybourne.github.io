@@ -1,9 +1,10 @@
 ---
 layout: portfolio
 title:  "Calrec ImPulse Core"
+launched: 2018
 ---
 
-<div class="post-image"><img src="/assets/images/portfolio-calrec-impulse-core.jpg"></div>
+<div class="post-image"><img src="/assets/images/portfolio/calrec-impulse-core/hero.jpg"></div>
 
 The Impulse core is the realisation of a lot of thought, collaboration, and hard work from myself and Calrec’s wonderfully talented R&D team. There were a lot of people involved, but I particularly wanted to highlight contributions from Patrick Warrington (Ex. Technical Director), Richard Whiteley (R&D Manager), Tim Watson, Ian Chantler, and Phil Hanson (Software), James Rudee, Dave Wooff, and Andy King (Hardware and Firmware), Neil Pritchard and Matt Dutton (Mechanical and Industrial Design), and Carla Castillo (UI and UX). They’ve all done a fantastic job in turning the very challenging, and seemingly impossible at times, product vision into reality.
 

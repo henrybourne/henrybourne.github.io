@@ -1,9 +1,10 @@
 ---
 layout: portfolio
 title:  "Lawo mc² UI Update"
+launched: 2020
 ---
 
-<div class="post-image"><img src="/assets/images/portfolio-lawo-mc2-ui-update.jpg"></div>
+<div class="post-image"><img src="/assets/images/portfolio/lawo-mc2-ui-update/hero.jpg"></div>
 
 Since joining Lawo in December 2019, I’ve been working hard to set up and integrate Experience & Design across the organisation. There’s been a lot happening. Today, I’m pleased to be able to discuss the first small steps of many good things to come.
 
@@ -20,7 +21,7 @@ The small first steps in this update outlined below. I’ll write more in future
 
 The Channel Display is shown in the left-hand display on the surface.
 
-<div class="post-image"><img class="no-shadow" src="/assets/images/lawo-mc2-ui-update-mc236-front.png"></div>
+<div class="post-image"><img class="no-shadow" src="/assets/images/portfolio/lawo-mc2-ui-update/mc236-front.jpg"></div>
 
 It presents strips of information above each fader on the surface. This information includes, amongst other things, the channel label, signal metering, bus routing, VCA group assignment, link assignment, automaker assignment, gain reduction meters, and a summary of channel processing.
 
@@ -30,7 +31,7 @@ This allows at-a-glance understanding of a subset of important channel informati
 
 For reference, here is a detailed look at the previous Channel Display.
 
-<div class="post-image"><img src="/assets/images/lawo-mc2-ui-update-channel-display-old.png"></div>
+<div class="post-image"><img src="/assets/images/portfolio/lawo-mc2-ui-update/channel-display-old.png"></div>
 
 The issue here is that there is too much visual noise. Visual noise is stimuli received and interpreted by your eyes and brain, but which has limited or no useful information. The more information you need to process to understand what you’re looking at, the harder you need to work. If we can reduce the unnecessary information—the noise—we can help reduce the amount of work you need to do, and help you make easier and faster decisions.
 
@@ -48,7 +49,7 @@ The ‘Mini Display’ towards the bottom of the strip shows a small summary of 
 
 Here’s the updated version following the UI update. There are a few differences in this screenshot from the one above, for example the row of buttons across the middle is not shown, but it covers the main points.
 
-<div class="post-image"><img src="/assets/images/lawo-mc2-ui-update-channel-display-new.png"></div>
+<div class="post-image"><img src="/assets/images/portfolio/lawo-mc2-ui-update/channel-display-new.png"></div>
 
 The main improvement that I hope you perceive is a greater sense of space and calm. It feels like there is more room to breath, and it’s easier to make sense of the information.
 
@@ -64,11 +65,11 @@ In addition to these main points, there are lots of other smaller changes to col
 
 The Main Display is shown in the right-hand display on the surface.
 
-<div class="post-image"><img class="no-shadow" src="/assets/images/lawo-mc2-ui-update-mc236-front.png"></div>
+<div class="post-image"><img class="no-shadow" src="/assets/images/portfolio/lawo-mc2-ui-update/mc236-front.jpg"></div>
 
 It provides access to detailed control of all parameters of the selected channel. It’s a dense view, with lots of different information competing for attention, but it’s important and used frequently.
 
-<div class="post-image"><img src="/assets/images/lawo-mc2-ui-update-main-display-old.png"></div>
+<div class="post-image"><img src="/assets/images/portfolio/lawo-mc2-ui-update/main-display-old.png"></div>
 
 The main points of interest for improvement here are:
 
@@ -80,7 +81,7 @@ There is lot of green. The majority of buttons in this version are coloured gree
 
 Here’s the updated Main Display.
 
-<div class="post-image"><img src="/assets/images/lawo-mc2-ui-update-main-display-new.png"></div>
+<div class="post-image"><img src="/assets/images/portfolio/lawo-mc2-ui-update/main-display-new.png"></div>
 
 As with the Channel Display, the view has been tweaked for better use of colour, spacing, alignment, and architecture, which provides more breathing room and makes it all easier to parse.
 

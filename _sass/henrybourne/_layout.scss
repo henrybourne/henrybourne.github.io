@@ -272,7 +272,7 @@
 /**
  * Portfolio
  */
- .portfolio {
+.portfolio {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -284,14 +284,14 @@
    }
  }
 
- .portfolio-item {
+.portfolio-item {
    display: flex;
    flex-direction: column;
    align-items: center;
    margin-bottom: 64px;
  }
 
- .portfolio-item-image {
+.portfolio-item-image {
    margin-bottom: 32px;
    border-radius: 16px;
    box-shadow: $shadow-default;
@@ -299,15 +299,15 @@
    z-index: 1;
  }
 
-  .portfolio-item-image img {
-    transition: transform 0.5s ease;
-  }
+.portfolio-item-image img {
+  transition: transform 0.5s ease;
+}
 
   .portfolio-item-image:hover img {
     transform: scale(1.03);
   }
 
- .portfolio-item-title {
+.portfolio-item-title {
   font-size: 32px;
   line-height: 32px;
   font-weight: 700;
@@ -317,17 +317,35 @@
   a {
     text-decoration: none;
   }
- }
+}
 
 .portfolio-item-role {
   font-size: 24px;
   line-height: 32px;
   font-weight: 300;
   color: $text-color-dim;
+  margin: 0;
+}
 
-  a {
-    text-decoration: none;
-    color: $text-color-dim;
+.portfolio-item-launch-date {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300;
+  color: $text-color-dim;
+  margin: 0;
+}
+
+.portfolio-ipad-app-image-grid {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 32px;
+
+  @include media-query($on-palm) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 }
 
@@ -335,9 +353,9 @@
  * About
  */
 
- .about {
-   margin: 32px;
- }
+.about {
+  margin: 32px;
+}
 
 .about-content{
 
@@ -373,6 +391,7 @@
  * Posts
  */
 .post-header {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -386,30 +405,26 @@
   // }
 }
 
+.portfolio-date-launched {
+  color: $text-color-dim;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 300;
+}
+
 .post {
     margin: 32px;
 }
 
 .post-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 64px;
-    margin-bottom: 64px;
-    max-width: 1920px;
-    margin-left: auto;
-    margin-right: auto;
-
-    img {
-      //max-height: 90vh;
-      box-shadow: $shadow-default;
-
-      &.no-shadow {
-        box-shadow: none;
-      }
-    }
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .post-content {
@@ -420,34 +435,17 @@
     margin-right: auto;
   }
 
-  // img {
-  //   display: block;
-  //   max-width: 100vw;
-  //   padding: 32px;
-  // }
+  img {
+    //max-height: 90vh;
+    box-shadow: $shadow-default;
 
-  // h2 {
-  //   @include relative-font-size(2);
-  //
-  //   @include media-query($on-laptop) {
-  //     @include relative-font-size(1.75);
-  //   }
-  // }
-  //
-  // h3 {
-  //   @include relative-font-size(1.2);
-  //
-  //   @include media-query($on-laptop) {
-  //     @include relative-font-size(1.375);
-  //   }
-  // }
-  //
-  // h4 {
-  //   @include relative-font-size(1.25);
-  //
-  //   @include media-query($on-laptop) {
-  //     @include relative-font-size(1.125);
-  //   }
-  // }
-
+    &.no-shadow {
+      box-shadow: none;
+    }
+  }
 }
+
+
+/**
+ * Post Specific styles
+ */
