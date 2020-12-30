@@ -126,19 +126,29 @@
  * Site footer
  */
 .site-footer {
+  color: $text-color-dim;
+  margin-top: 64px;
   padding: $spacing-unit * 4;
+
+  .copyright{
+    margin-top: 16px;
+    font-size: 16px;
+    text-align: center;
+  }
 }
 
-.social-media-icon {
-  display: inline-block;
-  margin: $spacing-unit * 2;
-}
+.social-icons {
+  display: grid;
+  grid-auto-columns: 24px;
+  grid-auto-flow: column;
+  gap: 16px;
+  justify-content: center;
 
-.social-icon {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  fill: #{$text-color};
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: $text-color-dim;
+  }
 }
 
 
@@ -151,30 +161,48 @@
 }
 
 .page-heading {
-  @include relative-font-size(2);
 }
 
+
+/**
+ * Post List
+ */
 .post-list-heading {
-  @include relative-font-size(1.75);
+
 }
 
 .post-list {
   margin-left: 0;
   list-style: none;
 
-  > li {
+  li {
+    display: block;
     margin-bottom: $spacing-unit;
+    padding: 8px;
+    border-radius: 8px;
+
+    a {
+      text-decoration: none;
+    }
   }
-}
 
-.post-meta {
-  font-size: $small-font-size;
-  color: $text-color-dim;
-}
+  li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
 
-.post-link {
-  display: block;
-  @include relative-font-size(1.5);
+  .post-list-post-title {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .post-list-post-meta {
+    font-weight: 300;
+    font-size: $small-font-size;
+    color: $text-color-dim;
+    margin: 0;
+  }
 }
 
 /**
@@ -399,10 +427,7 @@
 }
 
 .post-title {
-
-  // @include media-query($on-laptop) {
-  //   @include relative-font-size(2.25);
-  // }
+  margin-bottom: $spacing-unit;
 }
 
 .portfolio-date-launched {
@@ -416,27 +441,31 @@
     margin: 32px;
 }
 
-.post-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 64px;
-  margin-bottom: 64px;
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .post-content {
 
-  p, h1, h2, h3, blockquote, ul, li {
+  :not(img, .post-image) {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .post-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  blockquote {
+    max-width: 600px;
+    color: $text-color-dim;
+  }
+
   img {
-    //max-height: 90vh;
     box-shadow: $shadow-default;
 
     &.no-shadow {

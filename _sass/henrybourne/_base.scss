@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit * 2;
+  margin-bottom: 24px;
 }
 
 
@@ -141,9 +141,9 @@ a {
  * Blockquotes
  */
 blockquote {
-  border-left: 4px solid $text-color-dim;
-  padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
+  border-left: 1px solid $text-color-dim;
+  padding-left: 24px;
+  padding-right: 24px;
   font-style: italic;
 
   > :last-child {
@@ -240,4 +240,11 @@ table {
   th, td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
+}
+
+/**
+ * iFrames
+ */
+iframe {
+  display: block;
 }

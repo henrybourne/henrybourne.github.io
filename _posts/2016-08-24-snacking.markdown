@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Snacking"
+date:   2016-08-24 20:56:45 +0000
+---
+
+<div class="post-image"><img src="/assets/images/writing/snacking/snacking.jpeg"></div>
+
+I came across a really interesting discussion on the importance of prioritisation from a recent episode of the Intercom podcast. There was a great use of the term ‘snacking’ to describe the potentially undesirable attraction to low effort, low impact tasks. There’s a summary here: [https://blog.intercom.io/first-rule-prioritization-no-snacking](https://blog.intercom.io/first-rule-prioritization-no-snacking)
+
+> This work is easy to justify because “it only took 30 minutes”. And when it achieves nothing useful, it’s easy to excuse because it “took us so little time”. This is not strategy – this is flapping. Do this enough times and you’ll grow a low impact team that doesn’t achieve anything.
+>
+> The default position for a smart team without a clear plan is to snack.
+
+This is great advice. It's very easy to be tempted into doing work because it seems easy, or because it’s quick. I often hear phrases like “We should put this in because it will only take a few hours”, or “he’s working in this area, so we might as well do this at the same time”. I've certainly made statements like this in the past, and I'll probably making them again soon – hopefully recognising them for what they are at the time. These phrases usually align with work that is of personal interest to the person speaking, addressing particular personal annoyances that they want fixing regardless of their impact. It's fine to act on these statements, as long as you understand and accept the impact for your customers and your business.
+
+Remember that for every hour that you or someone in your team spends snacking on low effort, low impact work, you’re adding an extra hour onto the release of your more important, higher impact work.
+
+There is a counter arguement in which you’ll hear people mention phrases like “death by a thousand cuts”. The arguement is that by spending a day fixing fifty tiny (and low impact) user annoyances, you will add value to your product and make your users happier by fixing the most common small complaints. This is a reasonable arguement, as long as you, your team, and your company, all agree that this is the most effective and productive way to spend your time on that day and you accept the delay to the work that you’re not doing instead.
+
+If not, stop snacking and keep your focus on the goal of high impact work.
+
+> As an individual atomic unit, any one of those changes is valuable, right? It’s not that the reward isn’t there. They each have a positive benefit, but they’re all small, local optimizations. They all avoid the big bet you should be making, the more complex question you should be asking yourself, such as are we growing more relevant or less relevant as a product for our users? Is the world around us changing and do we need to be aggressive in changing with it or leading our users to a new reality? A little snack here and there never hurt anybody, but trying to do nothing but eat potato chips all day will eventually leave you dead.
