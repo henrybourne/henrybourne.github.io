@@ -297,6 +297,66 @@
   }
 }
 
+
+/**
+ * Posts
+ */
+.post-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.post-title {
+  margin-bottom: $spacing-unit;
+}
+
+.portfolio-date-launched {
+  color: $text-color-dim;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.post {
+    margin: 32px;
+}
+
+.post-content {
+
+  :not(img, .post-image, .portfolio-ipad-app-image-grid) {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .post-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  blockquote {
+    max-width: 600px;
+    color: $text-color-dim;
+  }
+
+  img {
+    box-shadow: $shadow-default;
+
+    &.no-shadow {
+      box-shadow: none;
+    }
+  }
+}
+
 /**
  * Portfolio
  */
@@ -366,6 +426,9 @@
 .portfolio-ipad-app-image-grid {
   margin-top: 64px;
   margin-bottom: 64px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -415,64 +478,6 @@
 }
 
 
-/**
- * Posts
- */
-.post-header {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 64px;
-}
-
-.post-title {
-  margin-bottom: $spacing-unit;
-}
-
-.portfolio-date-launched {
-  color: $text-color-dim;
-  font-size: 24px;
-  text-align: center;
-  font-weight: 300;
-}
-
-.post {
-    margin: 32px;
-}
-
-.post-content {
-
-  :not(img, .post-image) {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .post-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 64px;
-    margin-bottom: 64px;
-    max-width: 1920px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  blockquote {
-    max-width: 600px;
-    color: $text-color-dim;
-  }
-
-  img {
-    box-shadow: $shadow-default;
-
-    &.no-shadow {
-      box-shadow: none;
-    }
-  }
-}
 
 
 /**
