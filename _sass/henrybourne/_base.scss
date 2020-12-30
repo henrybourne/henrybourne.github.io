@@ -101,6 +101,10 @@ h1 {
   font-size: 64px;
   line-height: 72px;
   font-weight: 700;
+    @include media-query($on-palm) {
+        font-size: 40px;
+        line-height: 48px;
+    }
 }
 
 h2 {
