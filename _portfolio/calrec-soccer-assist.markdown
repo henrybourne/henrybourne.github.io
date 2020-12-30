@@ -12,7 +12,7 @@ Calrec's Assist apps defined a new category of assistive mixing tools in the bro
 
 Learn more at [calrec.com](calrec.com)
 
-<div class="portfolio-soccer-assist-image-grid">
+<div class="portfolio-ipad-app-image-grid">
   <img src="/assets/images/portfolio/calrec-soccer-assist/soccer-assist-ui-1.jpg">
   <img src="/assets/images/portfolio/calrec-soccer-assist/soccer-assist-ui-2.jpg">
   <img src="/assets/images/portfolio/calrec-soccer-assist/soccer-assist-ui-3.jpg">
