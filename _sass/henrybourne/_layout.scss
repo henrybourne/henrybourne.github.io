@@ -2,22 +2,21 @@
  * Site header
  */
 .site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 24px;
-
-  @include media-query($on-palm) {
-    padding: 8px 8px;
-  }
+  position: relative;
 }
 
 .site-title {
+  float: left;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
   border-radius: 8px;
   padding: 8px;
+  margin: 16px 32px;
+
+  @include media-query($on-palm) {
+    margin: 8px;
+  }
 
   &,
   &:visited,
@@ -30,24 +29,39 @@
   }
 }
 
-.site-nav {
-  //float: right;
-  //line-height: $base-line-height * $base-font-size * 2.25;
+.nav-button {
+  width: 24px;
+  height: 24px;
+  display: none;
+  float: right;
+  display: none;
+}
 
+.nav-button-label {
+  display: none;
+}
 
+.menu-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
 
-  .nav-trigger {
-    display: none;
+  > svg {
+    width: 24px;
+    height: 24px;
+    fill: $text-color;
   }
+}
 
-  .menu-icon {
-    display: none;
-  }
+.nav-items {
+  display: block;
+  float: right;
+  padding: 8px;
+  margin: 16px 32px;
 
   .page-link {
     color: $text-color;
-    line-height: $base-line-height;
-    font-weight: 400;
     padding: 8px;
     border-radius: 8px;
 
@@ -62,66 +76,50 @@
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 8px;
+
+      @include media-query($on-palm) {
+        margin: 0;
+      }
     }
+
   }
 
   .page-link:hover {
     background-color: rgba(0, 0, 0, 0.2);
   }
-
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    background-color: $background-color;
-    border-radius: 8px;
-    text-align: right;
-
-    label[for="nav-trigger"] {
-      display: block;
-      float: right;
-      width: 40px;
-      height: 40px;
-      z-index: 2;
-      cursor: pointer;
-    }
-
-    .menu-icon {
-      display: block;
-      //float: right;
-      width: 24px;
-      height: 24px;
-      line-height: 0;
-      padding: 8px;
-      text-align: center;
-
-      > svg {
-        fill: $text-color;
-      }
-    }
-
-    input ~ .trigger {
-      clear: both;
-      display: none;
-    }
-
-    input:checked ~ .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
-    }
-  }
 }
 
+@include media-query($on-palm) {
+  .nav-button-label {
+    display: block;
+    float: right;
+    padding: 8px;
+    margin: 8px;
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .nav-button ~ .nav-items {
+    display: none;
+  }
+
+  .nav-button:checked ~ .nav-items {
+    box-sizing: border-box;
+    float: none;
+    width: 95vw;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 8px;
+    background: #242424;
+    box-shadow: $shadow-default;
+    border-radius: 16px;
+    margin: 2.5vw;
+  }
+}
 
 
 /**
@@ -221,7 +219,7 @@
   border-bottom: 1px solid black;
 
   @include media-query($on-palm) {
-    // height: 75vh;
+    height: 50vh;
   }
 }
 
@@ -245,8 +243,8 @@
   @include media-query($on-palm) {
     padding-left: 16px;
     padding-right: 16px;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
     width: 100%;
   }
 }
@@ -255,15 +253,15 @@
  * Worked With
  */
 .work-with {
-  background-color: #161616;
+  background-color: #242424;
   padding: 64px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid black;
+  // border-bottom: 1px solid black;
   text-align: center;
   @include media-query($on-palm) {
-    padding: 48px 32px;
+    padding: 32px 32px;
   }
 }
 
@@ -388,7 +386,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 32px 0 32px;
+  padding: 0 32px;
   text-align: center;
 
   @include media-query($on-palm) {
