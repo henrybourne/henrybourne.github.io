@@ -379,6 +379,16 @@
   }
 }
 
+.app-store-link {
+  display: inline-block;
+  width: 144px;
+
+  img {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
 /**
  * Portfolio
  */
