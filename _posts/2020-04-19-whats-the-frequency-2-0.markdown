@@ -82,7 +82,7 @@ Version 2.0 properly supports all current Apple device and layout sizes. Using A
 
 ## In Future
 
-There are lots fo tweaks and improvements I’d like to make in future. Hopefully I’ll get round to them in less time than it took to release version 2.0…
+There are lots of tweaks and improvements I’d like to make in future. Hopefully I’ll get round to them in less time than it took to release version 2.0…
 
 Thanks to Apple’s Mac Catalyst project, I was able to get the app running on a Mac in a few minutes. It was literally a case of checking a box that says ‘Mac’. Fantastic work to the team at Apple for making it so easy.
 
