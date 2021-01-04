@@ -21,7 +21,7 @@ The small first steps in this update outlined below. I’ll write more in future
 
 The Channel Display is shown in the left-hand display on the surface.
 
-<div class="post-image"><img class="no-shadow" src="/assets/images/portfolio/lawo-mc2-ui-update/mc236-front.jpg"></div>
+<div class="post-image"><img src="/assets/images/portfolio/lawo-mc2-ui-update/mc236-front.jpg"></div>
 
 It presents strips of information above each fader on the surface. This information includes, amongst other things, the channel label, signal metering, bus routing, VCA group assignment, link assignment, automaker assignment, gain reduction meters, and a summary of channel processing.
 
@@ -65,7 +65,7 @@ In addition to these main points, there are lots of other smaller changes to col
 
 The Main Display is shown in the right-hand display on the surface.
 
-<div class="post-image"><img class="no-shadow" src="/assets/images/portfolio/lawo-mc2-ui-update/mc236-front.jpg"></div>
+<div class="post-image"><img src="/assets/images/portfolio/lawo-mc2-ui-update/mc236-front.jpg"></div>
 
 It provides access to detailed control of all parameters of the selected channel. It’s a dense view, with lots of different information competing for attention, but it’s important and used frequently.
 
