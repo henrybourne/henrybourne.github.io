@@ -49,7 +49,7 @@ The ‘Mini Display’ towards the bottom of the strip shows a small summary of 
 
 Here’s the updated version following the UI update. There are a few differences in this screenshot from the one above, for example the row of buttons across the middle is not shown, but it covers the main points.
 
-<div class="post-image"><img src="/assets/images/portfolio/lawo-mc2-ui-update/channel-display-new.png"></div>
+<div class="post-image"><img src="/assets/images/portfolio/lawo-mc2-ui-update/channel-display-new.jpg"></div>
 
 The main improvement that I hope you perceive is a greater sense of space and calm. It feels like there is more room to breath, and it’s easier to make sense of the information.
 
@@ -81,7 +81,7 @@ There is lot of green. The majority of buttons in this version are coloured gree
 
 Here’s the updated Main Display.
 
-<div class="post-image"><img src="/assets/images/portfolio/lawo-mc2-ui-update/main-display-new.png"></div>
+<div class="post-image"><img src="/assets/images/portfolio/lawo-mc2-ui-update/main-display-new.jpg"></div>
 
 As with the Channel Display, the view has been tweaked for better use of colour, spacing, alignment, and architecture, which provides more breathing room and makes it all easier to parse.
 
