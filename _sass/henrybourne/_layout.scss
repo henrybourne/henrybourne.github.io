@@ -236,16 +236,16 @@
 .hero-text {
   padding-left: 32px;
   padding-right: 32px;
-  font-size: 72px;
-  line-height: 80px;
-  width: 40%;
+  font-size: 64px;
+  line-height: 72px;
+  width: 50%;
 
   @include media-query($on-palm) {
     padding-left: 16px;
     padding-right: 16px;
     font-size: 24px;
     line-height: 32px;
-    width: 100%;
+    width: 50%;
   }
 }
 
