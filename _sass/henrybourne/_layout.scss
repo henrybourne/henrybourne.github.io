@@ -335,15 +335,23 @@
   word-wrap: break-word;
 
   margin: 32px;
+  //margin: 0px;
 
   @include media-query($on-palm) {
       margin: 24px;
+      //margin: 0px;
   }
 }
 
 .post-content {
 
   :not(img, .post-image, .portfolio-ipad-app-image-grid) {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -372,6 +380,7 @@
 
   img {
     box-shadow: $shadow-default;
+    border-radius: 16px;
 
     &.no-shadow {
       box-shadow: none;
@@ -402,7 +411,7 @@
   margin: auto;
 
   @include media-query($on-palm) {
-  padding: 48px 8px 0 8px;
+  padding: 48px 24px 0 24px;
   }
 
   h1 {
@@ -489,6 +498,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-gap: 32px;
+
+  img {
+    border-radius: 0px !important;
+  }
 
   @include media-query($on-palm) {
     grid-template-columns: 1fr;
