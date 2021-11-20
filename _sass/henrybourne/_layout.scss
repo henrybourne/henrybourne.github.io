@@ -439,7 +439,7 @@
  }
 
 .portfolio-item-image img {
-  transition: transform 0.5s ease;
+  transition: transform 0.5s cubic-bezier(0.45, 0, 0.55, 1);
 }
 
   .portfolio-item-image:hover img {
