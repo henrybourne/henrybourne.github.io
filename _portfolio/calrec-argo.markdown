@@ -10,7 +10,7 @@ In 2015, I started work on what would become Calrec's next generation product po
 
 So, during my last two years at the company, I was tasked with leading design and development of the next generation of large format Calrec audio mixers. In 2017, I left the company with detailed designs, specifications, and concepts, for them to execute.
 
-In September 2022, the new surface was finally launched, turning my work into reality. It's fundamentally the same design I left the company with in 2017. I'm humbled that they consider my work good enough to maintain and follow through into a product, many years later.
+In September 2022, the new surface was finally launched, largely unchanged from my designs. I’m humbled that they held my work in high enough regard that they continued to develop it into a functioning product many years later.
 
 Much respect as always to the talented R&D team, in executing and delivering this concept to the world.
 
