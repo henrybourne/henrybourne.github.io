@@ -31,7 +31,8 @@ I led an agile scrum team of designers, analysts, developers, and testers, worki
 
 Calrec designs and manufactures networked audio production systems for the world’s top Broadcasters including BBC, Sky, Al Jazeera, NHK, NBC, Fox, ESPN, and more. I was responsible for the full range of Calrec's digital hardware, software, mobile, and web products with a focus on human factors, information architecture, UI, and UX. The products I was responsible for, or involved with, include:
 
-- Apollo (including the complete UI and workflow rework for the Concord update)
+- Argo
+- Apollo
 - Artemis
 - Summa
 - Brio
