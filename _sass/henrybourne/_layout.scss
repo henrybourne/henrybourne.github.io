@@ -6,6 +6,14 @@
   top: 0px;
   background-color: var(--background-color);
   z-index: 100;
+  width: 100%;
+
+  .site-header-inner {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .site-title {
@@ -225,13 +233,20 @@
  * Cover
  */
 .cover-container {
-  height: 100vh;
+  height: calc(100vh - 80px) !important;
   display: flex;
   flex-direction: column;
+  
+  @include media-query($on-phone) {
+    height: calc(100vh - 56px) !important;
+  }
 }
 
 .cover-content {
   width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   flex: 1;
   position: relative;
 
@@ -480,7 +495,7 @@
   background-color: var(--background-color-bright);
 
   @include media-query($on-phone) {
-    height: 300px;
+    height: 256px;
     border-radius: 8px;
   }
 }
