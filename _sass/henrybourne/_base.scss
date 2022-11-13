@@ -101,10 +101,15 @@ h1 {
   font-size: 64px;
   line-height: 72px;
   font-weight: 700;
-    @include media-query($on-palm) {
-        font-size: 40px;
-        line-height: 48px;
-    }
+
+  @include media-query($on-tablet) {
+      font-size: 48px;
+      line-height: 56px;
+  }
+  @include media-query($on-phone) {
+      font-size: 40px;
+      line-height: 48px;
+  }
 }
 
 h2 {
@@ -112,6 +117,11 @@ h2 {
   line-height: 40px;
   font-weight: 700;
   margin-top: 64px;
+  
+  @include media-query($on-phone) {
+      font-size: 24px;
+      line-height: 32px;
+  }
 }
 
 h3 {
@@ -196,7 +206,7 @@ pre {
   padding-left: $spacing-unit;
   @extend %clearfix;
 
-  @include media-query($on-laptop) {
+  @include media-query($on-tablet) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;

@@ -10,7 +10,7 @@ Fader Assist makes use of the Calrec Serial Control Protocol, allowing remote co
 
 Learn more at [calrec.com](calrec.com)
 
-<div class="portfolio-ipad-app-image-grid">
+<div class="post-image-grid">
   <img src="/assets/images/portfolio/calrec-fader-assist/fader-assist-ui-1.png">
   <img src="/assets/images/portfolio/calrec-fader-assist/fader-assist-ui-2.png">
   <img src="/assets/images/portfolio/calrec-fader-assist/fader-assist-ui-3.png">

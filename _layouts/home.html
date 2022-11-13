@@ -5,13 +5,16 @@
 
   <body>
 
-    <div class="hero">
+
+    <div class="cover-container">
       {%- include header.html -%}
-      <div class="hero-text-container">
-        <h1 class="hero-text">
-          Hi, I’m Henry.<br />
-          I lead Experience & Design at <a href="https://lawo.com">Lawo</a>.
-        </h1>
+      <div class="cover-content">
+        <div class="cover-text-container">
+          <h1 class="cover-text">Hi, I’m Henry.</h1>
+          <h2 class="cover-subtext">I lead Experience & Design at <a href="https://lawo.com">Lawo</a>.</h2>
+        </div>
+        <!-- <div class="cover-image"></div> -->
+        <img class="cover-image" src="assets/images/headshot.png" />
       </div>
     </div>
 
@@ -20,143 +23,140 @@
       <div class="home">
         <!-- WORKED WITH -->
         <div class="work-with">
-          <p>I've previously made some great stuff with</p>
+          <!-- <h2>I've made some great things with</h2> -->
           <div class="work-with-logo-container">
-            <a href="https://calrec.com"><img class="work-with-logo work-with-logo-calrec" src="/assets/images/work-with/logo-calrec.png" alt="Logo for Calrec"></a>
-            <a href="https://bowerswilkins.com"><img class="work-with-logo work-with-logo-bowers-wilkins" src="/assets/images/work-with/logo-bowers-wilkins.svg" alt="Logo for Bowers & Wilkins"></a>
-            <a href="https://sky.com"><img class="work-with-logo work-with-logo-sky" src="/assets/images/work-with/logo-sky.svg" alt="Logo for Sky"></a>
-            <a href="https://lipa.ac.uk"><img class="work-with-logo work-with-logo-lipa" src="/assets/images/work-with/logo-lipa.png" alt="Logo for The Liverpool Institute for Performing Arts"></a>
+            <a class="work-with-logo" href="https://lawo.com"><img class="work-with-logo-lawo" src="/assets/images/work-with/logo-lawo.png" alt="Logo for Lawo"></a>
+            <a class="work-with-logo" href="https://bowerswilkins.com"><img class="work-with-logo-bowers-wilkins" src="/assets/images/work-with/logo-bowers-wilkins.png" alt="Logo for Bowers & Wilkins"></a>
+            <a class="work-with-logo" href="https://sky.com"><img class="work-with-logo-sky" src="/assets/images/work-with/logo-sky.png" alt="Logo for Sky"></a>
+            <a class="work-with-logo" href="https://lipa.ac.uk"><img class="work-with-logo-lipa" src="/assets/images/work-with/logo-lipa.png" alt="Logo for The Liverpool Institute for Performing Arts"></a>
+            <a class="work-with-logo" href="https://calrec.com"><img class="work-with-logo-calrec" src="/assets/images/work-with/logo-calrec.png" alt="Logo for Calrec"></a>
           </div>
         </div>
 
         <!-- PORTFOLIO -->
         <div class="portfolio">
-          <!-- <h1>My Work</h1> -->
+          <!-- <h2>Here's some of my work</h2> -->
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/lawo-diamond"><img src="assets/images/portfolio/lawo-diamond/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/lawo-diamond">Lawo Diamond</a></p>
-            <p class="portfolio-item-role">Product Designer</p>
-            <p class="portfolio-item-launch-date">2021</p>
-          </div>
+          <div class="portfolio-grid">
+            <div class="portfolio-item portfolio-lawo-home">
+              <a class="portfolio-item-link" href="/lawo-home">
+                <img class="portfolio-item-image" src="assets/images/portfolio/lawo-home/card.png" />
+                <p class="portfolio-item-title">Lawo Home</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/bowers-wilkins-800d4"><img src="assets/images/portfolio/bowers-wilkins-800d4/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/lawo-mc2-ui-update">Bowers & Wilkins 800 Series D4</a></p>
-            <p class="portfolio-item-role">Senior Product Manager</p>
-            <p class="portfolio-item-launch-date">2021</p>
-          </div>
+            <div class="portfolio-item portfolio-bowers-wilkins-800d4">
+              <a class="portfolio-item-link" href="/bowers-wilkins-800d4">
+                <img class="portfolio-item-image" src="assets/images/portfolio/bowers-wilkins-800d4/card.png" />
+                <p class="portfolio-item-title">Bowers & Wilkins 800 Series D4</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/lawo-home"><img src="assets/images/portfolio/lawo-home/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/lawo-home">Lawo Home</a></p>
-            <p class="portfolio-item-role">Product Designer</p>
-            <p class="portfolio-item-launch-date">2021</p>
-          </div>
+            <div class="portfolio-item portfolio-lawo-diamond">
+              <a class="portfolio-item-link" href="/lawo-diamond">
+                <img class="portfolio-item-image" src="assets/images/portfolio/lawo-diamond/card.png" />
+                <p class="portfolio-item-title">Lawo diamond</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/lawo-mc2-ui-update"><img src="assets/images/portfolio/lawo-mc2-ui-update/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/lawo-mc2-ui-update">Lawo mc² UI Update</a></p>
-            <p class="portfolio-item-role">Product Designer</p>
-            <p class="portfolio-item-launch-date">2020</p>
-          </div>
+            <div class="portfolio-item portfolio-lawo-mc2-ui-update">
+              <a class="portfolio-item-link" href="/lawo-mc2-ui-update">
+                <img class="portfolio-item-image" src="assets/images/portfolio/lawo-mc2-ui-update/card.png" />
+                <p class="portfolio-item-title">Lawo mc² UI Update</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/whats-the-frequency"><img src="assets/images/portfolio/whats-the-frequency/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/whats-the-frequency">What's the Frequency?</a></p>
-            <p class="portfolio-item-role">Product Designer & Developer</p>
-            <p class="portfolio-item-launch-date">2020</p>
-          </div>
+            <div class="portfolio-item portfolio-calrec-argo">
+              <a class="portfolio-item-link" href="/calrec-argo">
+                <img class="portfolio-item-image" src="assets/images/portfolio/calrec-argo/card.png" />
+                <p class="portfolio-item-title">Calrec Argo</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/bowers-wilkins-formation-flex"><img src="assets/images/portfolio/bowers-wilkins-formation-flex/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/bowers-wilkins-formation-flex">Bowers & Wilkins Formation Flex</a></p>
-            <p class="portfolio-item-role">Product Manager</p>
-            <p class="portfolio-item-launch-date">2019</p>
-          </div>
+            <div class="portfolio-item portfolio-calrec-summa">
+              <a class="portfolio-item-link" href="/calrec-summa">
+                <img class="portfolio-item-image" src="assets/images/portfolio/calrec-summa/card.png" />
+                <p class="portfolio-item-title">Calrec Summa</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/calrec-argo"><img src="assets/images/portfolio/calrec-argo/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/calrec-argo">Calrec Argo</a></p>
-            <p class="portfolio-item-role">Product Manager & Product Designer</p>
-            <p class="portfolio-item-launch-date">2015-2017 (Launched 2022)</p>
-          </div>
+            <div class="portfolio-item portfolio-calrec-brio">
+              <a class="portfolio-item-link" href="/calrec-brio">
+                <img class="portfolio-item-image" src="assets/images/portfolio/calrec-brio/card.png" />
+                <p class="portfolio-item-title">Calrec Brio</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/calrec-assist"><img src="assets/images/portfolio/calrec-assist/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/calrec-assist">Calrec Assist UI</a></p>
-            <p class="portfolio-item-role">Product Manager & Product Designer</p>
-            <p class="portfolio-item-launch-date">2018</p>
-          </div>
+            <div class="portfolio-item portfolio-calrec-apollo">
+              <a class="portfolio-item-link" href="/calrec-apollo">
+                <img class="portfolio-item-image" src="assets/images/portfolio/calrec-apollo/card.png" />
+                <p class="portfolio-item-title">Calrec Apollo</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/calrec-impulse-core"><img src="assets/images/portfolio/calrec-impulse-core/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/calrec-impulse-core">Calrec ImPulse Core</a></p>
-            <p class="portfolio-item-role">Product Manager</p>
-            <p class="portfolio-item-launch-date">2018</p>
-          </div>
+            <div class="portfolio-item portfolio-calrec-artemis">
+              <a class="portfolio-item-link" href="/calrec-artemis">
+                <img class="portfolio-item-image" src="assets/images/portfolio/calrec-artemis/card.png" />
+                <p class="portfolio-item-title">Calrec Artemis</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/calrec-brio"><img src="assets/images/portfolio/calrec-brio/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/calrec-brio">Calrec Brio</a></p>
-            <p class="portfolio-item-role">Product Manager & Product Designer</p>
-            <p class="portfolio-item-launch-date">2017</p>
-          </div>
+            <div class="portfolio-item portfolio-calrec-impulse-core">
+              <a class="portfolio-item-link" href="/calrec-impulse-core">
+                <img class="portfolio-item-image" src="assets/images/portfolio/calrec-impulse-core/card.png" />
+                <p class="portfolio-item-title">Calrec ImPulse Core</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/equivalence"><img src="assets/images/portfolio/equivalence/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/equivalence">Equivalence</a></p>
-            <p class="portfolio-item-role">Product Designer & Developer</p>
-            <p class="portfolio-item-launch-date">2017</p>
-          </div>
+            <div class="portfolio-item portfolio-calrec-summa-core">
+              <a class="portfolio-item-link" href="/calrec-summa-core">
+                <img class="portfolio-item-image" src="assets/images/portfolio/calrec-summa-core/card.png" />
+                <p class="portfolio-item-title">Calrec Summa Core</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/calrec-summa-core"><img src="assets/images/portfolio/calrec-summa-core/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/calrec-summa-core">Calrec Summa Core</a></p>
-            <p class="portfolio-item-role">Product Manager</p>
-            <p class="portfolio-item-launch-date">2014</p>
-          </div>
+            <div class="portfolio-item portfolio-calrec-assist">
+              <a class="portfolio-item-link" href="/calrec-assist">
+                <img class="portfolio-item-image" src="assets/images/portfolio/calrec-assist/card.png" />
+                <p class="portfolio-item-title">Calrec Assist UI</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/calrec-soccer-assist"><img src="assets/images/portfolio/calrec-soccer-assist/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/calrec-soccer-assist">Calrec Soccer Assist</a></p>
-            <p class="portfolio-item-role">Product Manager, Product Designer, Algorithm Designer, Developer</p>
-            <p class="portfolio-item-launch-date">2014</p>
-          </div>
+            <div class="portfolio-item portfolio-calrec-soccer-assist">
+              <a class="portfolio-item-link" href="/calrec-soccer-assist">
+                <img class="portfolio-item-image" src="assets/images/portfolio/calrec-soccer-assist/card.png" />
+                <p class="portfolio-item-title">Calrec Soccer Assist</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/calrec-fader-assist"><img src="assets/images/portfolio/calrec-fader-assist/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/calrec-fader-assist">Calrec Fader Assist</a></p>
-            <p class="portfolio-item-role">Product Manager, Product Designer, Developer</p>
-            <p class="portfolio-item-launch-date">2014</p>
-          </div>
+            <div class="portfolio-item portfolio-calrec-fader-assist">
+              <a class="portfolio-item-link" href="/calrec-fader-assist">
+                <img class="portfolio-item-image" src="assets/images/portfolio/calrec-fader-assist/card.png" />
+                <p class="portfolio-item-title">Calrec Fader Assist</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/fludd"><img src="assets/images/portfolio/fludd/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/fludd">Fludd</a></p>
-            <p class="portfolio-item-role">Product Designer, Developer</p>
-            <p class="portfolio-item-launch-date">2014</p>
-          </div>
+            <div class="portfolio-item portfolio-whats-the-frequency">
+              <a class="portfolio-item-link" href="/whats-the-frequency">
+                <img class="portfolio-item-image" src="assets/images/portfolio/whats-the-frequency/card.png" />
+                <p class="portfolio-item-title">What's the Frequency?</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/calrec-summa"><img src="assets/images/portfolio/calrec-summa/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/calrec-summa">Calrec Summa</a></p>
-            <p class="portfolio-item-role">Product Manager & Product Designer</p>
-            <p class="portfolio-item-launch-date">2013</p>
-          </div>
+            <div class="portfolio-item portfolio-fludd">
+              <a class="portfolio-item-link" href="/fludd">
+                <img class="portfolio-item-image" src="assets/images/portfolio/fludd/card.png" />
+                <p class="portfolio-item-title">Fludd</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/calrec-artemis"><img src="assets/images/portfolio/calrec-artemis/hero.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/calrec-artemis">Calrec Artemis</a></p>
-            <p class="portfolio-item-role">Product Manager & Product Designer</p>
-            <p class="portfolio-item-launch-date">2009</p>
-          </div>
+            <div class="portfolio-item portfolio-equivalence">
+              <a class="portfolio-item-link" href="/equivalence">
+                <img class="portfolio-item-image" src="assets/images/portfolio/equivalence/card.png" />
+                <p class="portfolio-item-title">Equivalence</p>
+              </a>
+            </div>
 
-          <div class="portfolio-item">
-            <a class="portfolio-item-image" href="/calrec-apollo"><img src="assets/images/portfolio/calrec-apollo/hero-2.jpg" /></a>
-            <p class="portfolio-item-title"><a href="/calrec-apollo">Calrec Apollo</a></p>
-            <p class="portfolio-item-role">Product Manager & Product Designer</p>
-            <p class="portfolio-item-launch-date">2009</p>
           </div>
         </div>
 
