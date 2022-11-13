@@ -4,7 +4,7 @@
 .site-header {
   position: sticky;
   top: 0px;
-  background-color: $background-color;
+  background-color: var(--background-color);
   z-index: 100;
 }
 
@@ -24,11 +24,11 @@
   &,
   &:visited,
   &:hover {
-    color: $text-color-bright;
+    color: var(--text-color-bright);
     text-decoration: none;
   }
   &:hover {
-    background-color: $hover-highlight-color;
+    background-color: var(--hover-highlight-color);
   }
 }
 
@@ -53,7 +53,7 @@
   > svg {
     width: 24px;
     height: 24px;
-    fill: $text-color;
+    fill: var(--text-color);
   }
 }
 
@@ -64,7 +64,7 @@
   margin: 16px 32px;
 
   .page-link {
-    color: $text-color;
+    color: var(--text-color);
     padding: 8px;
     border-radius: 8px;
     font-size: 16px;
@@ -73,7 +73,7 @@
     &:visited,
     &:hover
     {
-      color: $text-color-bright;
+      color: var(--text-color-bright);
       text-decoration: none;
     }
 
@@ -89,7 +89,7 @@
   }
 
   .page-link:hover {
-    background-color: $hover-highlight-color;
+    background-color: var(--hover-highlight-color);
   }
 }
 
@@ -106,7 +106,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: $hover-highlight-color;
+      background-color: var(--hover-highlight-color);
     }
   }
 
@@ -145,16 +145,16 @@
       flex-direction: column;
       align-items: stretch;
       padding: 8px;
-      background-color: $background-color;
+      background-color: var(--background-color);
       box-shadow: $shadow-default;
       border-radius: 16px;
 
       .page-link {
         text-align: center;
-        background-color: $background-color-bright;
+        background-color: var(--background-color-bright);
 
         &:hover {
-          background-color: $hover-highlight-color;
+          background-color: var(--hover-highlight-color);
         }
       }
     }
@@ -203,7 +203,7 @@
   }
 
   li:hover {
-    background-color: $hover-highlight-color;
+    background-color: var(--hover-highlight-color);
   }
 
   .post-list-post-title {
@@ -216,7 +216,7 @@
   .post-list-post-meta {
     font-weight: 300;
     font-size: $small-font-size;
-    color: $text-color-dim;
+    color: var(--text-color-dim);
     margin: 0;
   }
 }
@@ -328,17 +328,17 @@
 
   .cover-subtext {
     font-size: 64px;
-    color: $text-color-dim;
+    color: var(--text-color-dim);
     line-height: 64px;
     margin: 0;
     font-weight: 200;
 
     a {
       font-weight: 600;
-      color: $text-color-dim;
+      color: var(--text-color-dim);
 
       &:hover {
-        color: $lawo-color;
+        color: var(--lawo-color);
       }
     }
 
@@ -408,7 +408,7 @@
   display: flex;
   align-items: center;
   border-radius: 16px;
-  background-color: $background-color-bright;
+  background-color: var(--background-color-bright);
   height: 128px;
   padding: 0px 32px;
 
@@ -477,7 +477,7 @@
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  background-color: $background-color-bright;
+  background-color: var(--background-color-bright);
 
   @include media-query($on-phone) {
     height: 300px;
@@ -505,13 +505,13 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
-  color: $text-color-bright;
+  color: var(--text-color-bright);
   margin-bottom: 8px;
   text-align: left;
 
   a {
     text-decoration: none;
-    color: $text-color-bright;
+    color: var(--text-color-bright);
   }
 
   @include media-query($on-phone) {
@@ -527,6 +527,10 @@
 .portfolio-lawo-home {
   grid-column: span 8;
   background: linear-gradient(45deg, rgba(4,126,175,0.9) 0%, rgba(4,154,213,0.9) 100%), url('/assets/images/noise.svg');
+  
+  .portfolio-item-title {
+    color: #F5F5F5;
+  }
 
   .portfolio-item-image {
     box-sizing: border-box;
@@ -548,10 +552,10 @@
 // 800 D4
 .portfolio-bowers-wilkins-800d4 {
   grid-column: span 3;
-  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
+  background: #FEFEFE;
 
   .portfolio-item-title {
-    color: $background-color;
+    color: #282828;
   }
 
   .portfolio-item-image {
@@ -574,6 +578,10 @@
 // Lawo Diamond
 .portfolio-lawo-diamond {
   grid-column: span 5;
+  
+  .portfolio-item-title {
+    color: #F5F5F5;
+  }
 
   .portfolio-item-image {
     box-sizing: border-box;
@@ -594,8 +602,11 @@
 // Lawo mc² UI Update
 .portfolio-lawo-mc2-ui-update {
   grid-column: span 8;
-  // background: linear-gradient(-135deg, rgba(220,0,107,1) 0%, rgba(50,50,50,1) 80%);
   background: linear-gradient(-135deg, rgba(220,0,107,0.9) 0%, rgba(220,0,107,0.9) 0%), url('/assets/images/noise.svg');
+  
+  .portfolio-item-title {
+    color: #F5F5F5;
+  }
 
   .portfolio-item-image {
     box-sizing: border-box;
@@ -616,7 +627,6 @@
 // Bowers Flex
 .portfolio-bowers-wilkins-formation-flex {
   grid-column: span 4;
-  // background: linear-gradient(-135deg, rgba(220,0,107,1) 0%, rgba(50,50,50,1) 80%);
   background-color: rgba(0,0,0,1);
 
   .portfolio-item-image {
@@ -642,7 +652,7 @@
   background: rgba(255,255,255,1);
 
   .portfolio-item-title {
-    color: $background-color;
+    color: #282828;
   }
 
   .portfolio-item-image {
@@ -668,7 +678,7 @@
   background-color: rgba(220,0,107,1);
 
   .portfolio-item-title {
-    color: $background-color;
+    color: #282828;
   }
 
   .portfolio-item-image {
@@ -687,6 +697,10 @@
 .portfolio-calrec-brio {
   grid-column: span 3;
   background: linear-gradient(0deg, rgba(60,60,60,0.9) 0%, rgba(80,80,80,0.9) 100%), url('/assets/images/noise.svg');
+  
+  .portfolio-item-title {
+    color: #F5F5F5;
+  }
 
   .portfolio-item-image {
     box-sizing: border-box;
@@ -709,7 +723,7 @@
   grid-column: span 4;
 
   .portfolio-item-title {
-    color: $background-color;
+    color: #282828;
   }
 
   .portfolio-item-image {
@@ -735,7 +749,7 @@
   background-color: #FFFFFF;
 
   .portfolio-item-title {
-    color: $background-color;
+    color: #282828;
   }
 
   .portfolio-item-image {
@@ -761,7 +775,7 @@
   background: linear-gradient(45deg, rgba(0,158,224,0.9) 0%, rgba(0,158,224,0.9) 100%), url('/assets/images/noise.svg');
 
   .portfolio-item-title {
-    color: #FFFFFF;
+    color: #F5F5F5;
   }
 
   .portfolio-item-image {
@@ -784,10 +798,10 @@
 // Summa Core
 .portfolio-calrec-summa-core {
   grid-column: span 5;
-  background-color: #FFFFFF;
+  background-color: #F5F5F5;
 
   .portfolio-item-title {
-    color: $background-color;
+    color: #282828;
   }
 
   .portfolio-item-image {
@@ -812,7 +826,7 @@
   grid-column: span 3;
 
   .portfolio-item-title {
-    color: #FFFFFF;
+    color: #F5F5F5;
   }
 
   .portfolio-item-image {
@@ -838,7 +852,7 @@
   background-color: rgba(255,255,255,1);
 
   .portfolio-item-title {
-    color: $background-color;
+    color: #282828;
   }
 
   .portfolio-item-image {
@@ -862,6 +876,10 @@
   grid-column: span 4;
   background-repeat: no-repeat;
   background: linear-gradient(0deg, rgba(85,129,56,0.9) 40%, rgba(0,158,224,0.9) 100%), url('/assets/images/noise.svg');
+  
+  .portfolio-item-title {
+    color: #F5F5F5;
+  }
 
   .portfolio-item-image {
     box-sizing: border-box;
@@ -887,7 +905,7 @@
   background-position: bottom;
 
   .portfolio-item-title {
-    color: #FFFFFF;
+    color: #F5F5F5;
   }
 
   .portfolio-item-image {
@@ -913,7 +931,7 @@
   background: linear-gradient(45deg, rgba(152,102,179,0.88) 0%, rgba(176,87,84,0.88) 100%), url('/assets/images/noise.svg');
 
   .portfolio-item-title {
-    color: #FFFFFF;
+    color: #F5F5F5;
   }
 
   .portfolio-item-image {
@@ -939,7 +957,7 @@
   background: linear-gradient(135deg, rgba(130,130,130,1) 0%, rgba(174,174,174,1) 100%);
 
   .portfolio-item-title {
-    color: #FFFFFF;
+    color: #F5F5F5;
   }
 
   .portfolio-item-image {
@@ -1003,7 +1021,7 @@
 }
 
 .portfolio-date-launched {
-  color: $text-color-dim;
+  color: var(--text-color-dim);
   font-size: 24px;
   text-align: center;
   font-weight: 300;
@@ -1077,7 +1095,7 @@
 
   blockquote {
     max-width: 600px;
-    color: $text-color-dim;
+    color: var(--text-color-dim);
   }
 
   img {
@@ -1176,7 +1194,7 @@
 * Site footer
 */
 .site-footer {
- color: $text-color-dim;
+ color: var(--text-color-dim);
  margin-top: 32px;
  padding: $spacing-unit * 4;
 
@@ -1197,6 +1215,6 @@
  svg {
    width: 24px;
    height: 24px;
-   fill: $text-color-dim;
+   fill: var(--text-color-dim);
  }
 }

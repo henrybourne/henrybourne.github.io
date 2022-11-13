@@ -15,8 +15,8 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
-  background-color: $background-color;
+  color: var(--text-color);
+  background-color: var(--background-color);
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -94,7 +94,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  color: $text-color-bright;
+  color: var(--text-color-bright);
 }
 
 h1 {
@@ -137,15 +137,15 @@ h3 {
  * Links
  */
 a {
-  color: $text-color-bright;
+  color: var(--text-color-bright);
   text-decoration: underline;
 
   &:visited {
-    color: $text-color-bright;
+    color: var(--text-color-bright);
   }
 
   &:hover {
-    color: $text-color-bright;
+    color: var(--text-color-bright);
   }
 
 }
@@ -155,7 +155,7 @@ a {
  * Blockquotes
  */
 blockquote {
-  border-left: 1px solid $text-color-dim;
+  border-left: 1px solid var(--text-color-dim);
   padding-left: 24px;
   padding-right: 24px;
   font-style: italic;
@@ -235,7 +235,7 @@ pre {
     width: 16px;
     height: 16px;
     display: inline-block;
-    fill: #{$text-color};
+    fill: #{var(--text-color)};
     padding-right: 5px;
     vertical-align: text-top;
 }
@@ -244,17 +244,17 @@ pre {
 /**
  * Tables
  */
-table {
-  margin-bottom: $spacing-unit;
-  width: 100%;
-  text-align: $table-text-align;
-  color: lighten($text-color, 18%);
-  border-collapse: collapse;
-  border: 1px solid $text-color-dim;
-  th, td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
-  }
-}
+// table {
+//   margin-bottom: $spacing-unit;
+//   width: 100%;
+//   text-align: $table-text-align;
+//   color: lighten(var(--text-color), 18%);
+//   border-collapse: collapse;
+//   border: 1px solid var(--text-color-dim);
+//   th, td {
+//     padding: ($spacing-unit / 3) ($spacing-unit / 2);
+//   }
+// }
 
 /**
  * iFrames

@@ -1,5 +1,27 @@
 @charset "utf-8";
 
+:root {
+  --text-color: #282828;
+  --text-color-bright: #000;
+  --text-color-dim: #8C8C8C;
+  --background-color: #e5e5e5;
+  --background-color-bright: #333333;
+  --lawo-color: rgba(0, 167, 231, 1);
+  --hover-highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #cacaca;
+    --text-color-bright: #fff;
+    --text-color-dim: #8C8C8C;
+    --background-color: #202020;
+    --background-color-bright: #333333;
+    --lawo-color: rgba(0, 167, 231, 1);
+    --hover-highlight-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
 // Define defaults for each variable.
 
 $base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
