@@ -4,26 +4,35 @@
 .site-header {
   position: sticky;
   top: 0px;
-  background-color: var(--background-color);
+  background-color: var(--background-color-blur);
   z-index: 100;
   width: 100%;
+  height: 56px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
 
-  .site-header-inner {
-    width: 100%;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.site-header-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site-title {
-  float: left;
+  height: 40px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px; 
+  left: 0px;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
   border-radius: 8px;
   padding: 8px;
-  margin: 16px 32px;
+  margin: 8px 32px;
 
   @include media-query($on-phone) {
     margin: 8px;
@@ -67,37 +76,45 @@
 
 .nav-items-container {
   display: block;
-  float: right;
-  padding: 8px;
-  margin: 16px 32px;
+  height: 40px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px; 
+  right: 0px;
+  padding: 0px;
+  margin: 8px 32px;
+
+  .nav-items {
+    height: 100%;
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+    align-items: stretch;
+  }
 
   .page-link {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
     color: var(--text-color);
-    padding: 8px;
     border-radius: 8px;
     font-size: 16px;
+    line-height: 24px;
 
     &,
     &:visited,
     &:hover
     {
-      color: var(--text-color-bright);
       text-decoration: none;
-    }
-
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 8px;
-
-      @include media-query($on-phone) {
-        margin: 0;
-      }
     }
 
   }
 
   .page-link:hover {
     background-color: var(--hover-highlight-color);
+    color: var(--text-color-bright);
   }
 }
 
@@ -138,13 +155,21 @@
     padding-bottom: 0px;
     padding-left: 16px;
     padding-right: 16px;
-    background-color: rgba(0, 0, 0, 0.5);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     z-index: 100;
     animation: fadeInAnimation ease 0.3s;
 
+
+    @media (prefers-color-scheme: light) {
+      background-color: var(--background-color-blur);
+    }
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--background-color-blur);
+    }
+
     .nav-items {
+      height: auto;
       width: 100%;
       opacity: 1;
       box-sizing: border-box;
@@ -154,10 +179,18 @@
       align-items: stretch;
       padding: 8px;
       background-color: var(--background-color);
-      box-shadow: $shadow-default;
       border-radius: 16px;
 
+      @media (prefers-color-scheme: light) {
+        box-shadow: $shadow-default-light;
+      }
+      @media (prefers-color-scheme: dark) {
+        box-shadow: $shadow-default-dark;
+      }
+
       .page-link {
+        height: 56px;
+        justify-content: center;
         text-align: center;
         background-color: var(--background-color-bright);
 
@@ -202,7 +235,10 @@
   li {
     display: block;
     margin-bottom: $spacing-unit;
-    padding: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
     border-radius: 8px;
 
     a {
@@ -233,28 +269,28 @@
  * Cover
  */
 .cover-container {
-  height: calc(100vh - 80px) !important;
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  height: calc(100vh - 56px) !important;
+  width: 100%;
   
   @include media-query($on-phone) {
     height: calc(100vh - 56px) !important;
   }
+  @media (prefers-color-scheme: light) {
+    box-shadow: $shadow-default-light;
+  }
+  @media (prefers-color-scheme: dark) {
+    box-shadow: $shadow-default-dark;
+  }
 }
 
 .cover-content {
+  position: relative;
+  height: 100%;
   width: 100%;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  flex: 1;
-  position: relative;
-
-  @include media-query($on-phone) {
-    display: flex;
-    flex-direction: column;
-  }
-
 }
 
 .cover-image {
@@ -279,7 +315,8 @@
     padding-right: 16px;
   }
   @include media-query($on-phone) {
-    flex-basis: 50%;
+    height: 60%;
+    top: 40%;
     padding-right: 16px;
     padding-left: 16px;
     object-position: center bottom;
@@ -308,15 +345,17 @@
     padding-right: 60%;
   }
   @include media-query($on-phone) {
-    flex-basis: 50%;
-    position: relative;
+    position: absolute;
+    height: 40%;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 16px;
     padding-right: 16px;
     text-align: center;
-    height: auto;
   }
 
   .cover-text {
@@ -451,6 +490,25 @@
   }
 }
 
+@media (prefers-color-scheme: light) {
+  .work-with-logo-bowers-wilkins-light, .work-with-logo-lipa-light, .work-with-logo-calrec-light {
+    display: block;
+  }
+  .work-with-logo-bowers-wilkins-dark, .work-with-logo-lipa-dark, .work-with-logo-calrec-dark {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .work-with-logo-bowers-wilkins-light, .work-with-logo-lipa-light, .work-with-logo-calrec-light {
+    display: none;
+  }
+  .work-with-logo-bowers-wilkins-dark, .work-with-logo-lipa-dark, .work-with-logo-calrec-dark {
+    display: block;
+  }
+}
+
+
 
 /**
  * Cover Page Portfolio
@@ -494,9 +552,23 @@
   overflow: hidden;
   background-color: var(--background-color-bright);
 
+  @include media-query($on-laptop) {
+    height: 400px;
+    border-radius: 16px;
+  }
+
+  @include media-query($on-tablet) {
+    height: 360px;
+    border-radius: 8px;
+  }
+
   @include media-query($on-phone) {
     height: 256px;
     border-radius: 8px;
+  }
+
+  @media (prefers-color-scheme: light) {
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -530,8 +602,8 @@
   }
 
   @include media-query($on-phone) {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 16px;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 16px;
@@ -583,6 +655,10 @@
     padding-bottom: 0px;
     object-fit: contain;
     object-position: bottom;
+
+    @include media-query($on-phone) {
+      padding-top: 48px;
+    }
   }
 
   @include media-query($on-tablet) {
@@ -593,6 +669,7 @@
 // Lawo Diamond
 .portfolio-lawo-diamond {
   grid-column: span 5;
+  background-color: rgb(51, 51, 51);
   
   .portfolio-item-title {
     color: #F5F5F5;
@@ -607,6 +684,11 @@
     padding-top: 96px;
     padding-bottom: 32px;
     object-fit: contain;
+    
+    @include media-query($on-phone) {
+      padding-top: 56px;
+      padding-bottom: 24px;
+    }
   }
 
   @include media-query($on-tablet) {
@@ -632,6 +714,11 @@
     padding-top: 96px;
     padding-bottom: 32px;
     object-fit: contain;
+    
+    @include media-query($on-phone) {
+      padding-top: 56px;
+      padding-bottom: 24px;
+    }
   }
 
   @include media-query($on-tablet) {
@@ -641,19 +728,27 @@
 
 // Bowers Flex
 .portfolio-bowers-wilkins-formation-flex {
-  grid-column: span 4;
+  grid-column: span 3;
   background-color: rgba(0,0,0,1);
+  
+  .portfolio-item-title {
+    color: #DADADA;
+  }
 
   .portfolio-item-image {
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    padding-left: 30%;
+    padding-left: 32px;
     padding-right: 32px;
     padding-top: 96px;
     padding-bottom: 0px;
     object-fit: contain;
     object-position: bottom;
+    
+    @include media-query($on-phone) {
+      padding-top: 56px;
+    }
   }
 
   @include media-query($on-tablet) {
@@ -663,7 +758,7 @@
 
 // Calrec Argo
 .portfolio-calrec-argo {
-  grid-column: span 8;
+  grid-column: span 5;
   background: rgba(255,255,255,1);
 
   .portfolio-item-title {
@@ -690,7 +785,7 @@
 // Calrec Summa
 .portfolio-calrec-summa {
   grid-column: span 5;
-  background-color: rgba(220,0,107,1);
+  background-color: #FFFFFF;
 
   .portfolio-item-title {
     color: #282828;
@@ -736,6 +831,7 @@
 // Apollo
 .portfolio-calrec-apollo {
   grid-column: span 4;
+  background-color: #FFFFFF;
 
   .portfolio-item-title {
     color: #282828;
@@ -750,7 +846,7 @@
     padding-top: 0px;
     padding-bottom: 0px;
     object-fit: cover;
-    object-position: bottom;
+    object-position: center;
   }
 
   @include media-query($on-tablet) {
@@ -777,6 +873,10 @@
     padding-bottom: 0px;
     object-fit: contain;
     object-position: left bottom;
+    
+    @include media-query($on-phone) {
+      padding-top: 56px;
+    }
   }
 
   @include media-query($on-tablet) {
@@ -803,6 +903,10 @@
     padding-bottom: 16px;
     object-fit: contain;
     object-position: right;
+    
+    @include media-query($on-phone) {
+      padding-top: 56px;
+    }
   }
 
   @include media-query($on-tablet) {
@@ -829,6 +933,10 @@
     padding-bottom: 16px;
     object-fit: contain;
     object-position: right;
+    
+    @include media-query($on-phone) {
+      padding-top: 56px;
+    }
   }
 
   @include media-query($on-tablet) {
@@ -839,6 +947,7 @@
 // Assist
 .portfolio-calrec-assist {
   grid-column: span 3;
+  background-color: rgb(51, 51, 51);
 
   .portfolio-item-title {
     color: #F5F5F5;
@@ -879,6 +988,10 @@
     padding-top: 64px;
     padding-bottom: 0px;
     object-fit: contain;
+    
+    @include media-query($on-phone) {
+      padding-top: 48px;
+    }
   }
 
   @include media-query($on-tablet) {
@@ -905,6 +1018,10 @@
     padding-top: 64px;
     padding-bottom: 0px;
     object-fit: contain;
+    
+    @include media-query($on-phone) {
+      padding-top: 48px;
+    }
   }
 
   @include media-query($on-tablet) {
@@ -933,6 +1050,10 @@
     padding-bottom: 16px;
     object-fit: contain;
     object-position: bottom;
+    
+    @include media-query($on-phone) {
+      padding-top: 56px;
+    }
   }
 
   @include media-query($on-tablet) {
@@ -959,6 +1080,11 @@
     padding-bottom: 32px;
     object-fit: contain;
     object-position: center;
+    
+    @include media-query($on-phone) {
+      padding-top: 48px;
+      padding-bottom: 24px;
+    }
   }
 
   @include media-query($on-tablet) {
@@ -985,6 +1111,11 @@
     padding-bottom: 32px;
     object-fit: contain;
     object-position: center;
+    
+    @include media-query($on-phone) {
+      padding-top: 48px;
+      padding-bottom: 24px;
+    }
   }
 
   @include media-query($on-tablet) {
@@ -1060,7 +1191,7 @@
 
 .post-content {
 
-  :not(img, .post-image, .post-image-grid) {
+  :not(img, .post-image, .post-image-grid, .post-video, .post-video > iframe) {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -1083,8 +1214,8 @@
     }
 
     @include media-query($on-phone) {
-      margin-top: 32px;
-      margin-bottom: 32px;
+      margin-top: 16px;
+      margin-bottom: 16px;
     }
   }
 
@@ -1098,10 +1229,15 @@
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    
+    @include media-query($on-phone) {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
 
     iframe {
       position: absolute;
-      top: 0; bottom: 0; left: 0;
+      top: 0; bottom: 0; left: 0; right: 0;
       width: 100%;
       height: 100%;
       border: 0;

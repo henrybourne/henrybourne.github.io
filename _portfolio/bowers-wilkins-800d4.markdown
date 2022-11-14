@@ -22,7 +22,9 @@ Huge congratulations to [Christopher May](https://www.linkedin.com/in/christophe
 
 Learn more at [bowerswilkins.com](bowerswilkins.com), or listen to Andy Kerr in this excellent video:
 
-<div class="post-video"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7Y4BjZ2_f1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="post-video"><iframe src="https://www.youtube-nocookie.com/embed/7Y4BjZ2_f1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<!-- <div class="post-video"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7Y4BjZ2_f1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> -->
 
 <div class="post-image"><img src="/assets/images/portfolio/bowers-wilkins-800d4/801-d4-black-full.jpg"></div>
 

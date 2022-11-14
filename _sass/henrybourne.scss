@@ -1,13 +1,14 @@
 @charset "utf-8";
 
 :root {
-  --text-color: #282828;
-  --text-color-bright: #000;
+  --text-color: #404040;
+  --text-color-bright: #202020;
   --text-color-dim: #8C8C8C;
-  --background-color: #e5e5e5;
-  --background-color-bright: #333333;
+  --background-color: rgb(244,244,244);
+  --background-color-blur: rgba(244,244,244,0.8);
+  --background-color-bright: #E9E9E9;
   --lawo-color: rgba(0, 167, 231, 1);
-  --hover-highlight-color: rgba(0, 0, 0, 0.1);
+  --hover-highlight-color: rgba(0, 0, 0, 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,7 +16,8 @@
     --text-color: #cacaca;
     --text-color-bright: #fff;
     --text-color-dim: #8C8C8C;
-    --background-color: #202020;
+    --background-color: rgb(32,32,32);
+    --background-color-blur: rgba(32,32,32,0.8);
     --background-color-bright: #333333;
     --lawo-color: rgba(0, 167, 231, 1);
     --hover-highlight-color: rgba(255, 255, 255, 0.1);
@@ -41,7 +43,8 @@ $lawo-color:              rgba(0, 167, 231, 1) !default;
 
 $hover-highlight-color: rgba(255, 255, 255, 0.1) !default;
 
-$shadow-default:    0px 32px 64px rgba(0, 0, 0, 0.2), 0px 16px 32px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.2);
+$shadow-default-dark:    0px 32px 64px rgba(0, 0, 0, 0.2), 0px 16px 32px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.2);
+$shadow-default-light:    0px 32px 64px rgba(0, 0, 0, 0.1), 0px 16px 32px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.1);
 
 $table-text-align: left !default;
 
