@@ -8,4 +8,4 @@ Back in September I was part of a panel discussion on future directions in Intel
 
 Despite the shaky start (macOS hot corners!) it was an interesting and entertaining event. Thanks to all involved for hosting the event and inviting me to participate.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4WHWdh5U9iA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="post-video"><iframe src="https://www.youtube-nocookie.com/embed/4WHWdh5U9iA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
