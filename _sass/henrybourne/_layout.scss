@@ -1004,6 +1004,11 @@
     object-fit: cover;
     object-position: left bottom;
     
+    @include media-query($on-tablet) {
+      padding-top: 96px;
+      object-position: left top;
+    }
+
     @include media-query($on-phone) {
       padding-top: 48px;
       object-position: left top;
