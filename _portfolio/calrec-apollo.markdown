@@ -10,5 +10,7 @@ After writing the manual and providing all training when Apollo was launched in 
 
 Learn more at [calrec.com](calrec.com)
 
-<div class="post-image"><img src="/assets/images/portfolio/calrec-apollo/apollo-rotaries.jpg"></div>
+<div class="post-image"><img src="/assets/images/portfolio/calrec-apollo/apollo-sky.jpg"></div>
 <div class="post-image"><img src="/assets/images/portfolio/calrec-apollo/apollo-arena.jpg"></div>
+<div class="post-image"><img src="/assets/images/portfolio/calrec-apollo/apollo-sky-2.jpg"></div>
+<div class="post-image"><img src="/assets/images/portfolio/calrec-apollo/apollo-rotaries.jpg"></div>
