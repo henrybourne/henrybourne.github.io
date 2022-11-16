@@ -754,10 +754,10 @@
     padding-top: 0px;
     padding-bottom: 0px;
     object-fit: cover;
-    object-position: bottom;
-
+    object-position: top;
+    
     @include media-query($on-phone) {
-      padding-top: 48px;
+      object-position: top;  
     }
   }
 
@@ -984,7 +984,7 @@
   }
 }
 
-// Assist
+// Calrec Assist UI
 .portfolio-calrec-assist {
   grid-column: span 3;
   background-color: rgb(51, 51, 51);
@@ -1003,6 +1003,11 @@
     padding-bottom: 0;
     object-fit: cover;
     object-position: left bottom;
+    
+    @include media-query($on-phone) {
+      padding-top: 48px;
+      object-position: left top;
+    }
   }
 
   @include media-query($on-tablet) {
