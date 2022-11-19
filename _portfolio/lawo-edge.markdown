@@ -10,7 +10,7 @@ launched: 2022
 
 Lawo's fantastic R&D team created a powerful and flexible device. My challenge was to help to make it simple to understand, manage, and operate. 
 
-.edge integrates beautifully into [Home](/lawo-home.html), Lawo's management platform for IP-based media infrastructures. We designed and built Home with devices like .edge in mind, carefully considering the many devices, workflows, and functionality we want to develop across the Lawo portfolio in future. Because of this careful forethought, .edge makes use of many of the same user workflows as many of Lawo's other products, inckuding the entire audio production product line. This simplifies things for users, as they don't have to learn multiple ways to achieve common tasks, and simplifies development, as we don't need to maintain multiple parallel design and development paths.
+.edge integrates beautifully into [Home](/lawo-home.html), Lawo's management platform for IP-based media infrastructures. We designed and built Home with devices like .edge in mind, carefully considering the many devices, workflows, and functionality we want to develop across the Lawo portfolio in future. Because of this careful forethought, .edge makes use of many of the same user workflows as many of Lawo's other products, including the entire audio production product line. This simplifies things for users, as they don't have to learn multiple ways to achieve common tasks, and simplifies development, as we don't need to maintain multiple parallel design and development paths.
 
 'Call home' is a simple but powerful feature. Pressing the 'Call Home' button on the .edge hardware will identify the device in the Home UI. This makes it trivial to identify the correct device, and reduce errors.
 
