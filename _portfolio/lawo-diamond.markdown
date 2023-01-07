@@ -10,7 +10,9 @@ Launched on 16th November 2021, diamond is a modular, IP native radio mixing con
 
 Each diamond console is delivered with a 'standard configuration' that provides clear and intuitive workflows that will suit the most common applications. As expected from a Lawo console, this standard configuration can be extended, customised, or replaced completely with your own interface and workflow designs using [VisTool](https://lawo.com/products/vistool/), and the configuration and logic of the processing engine, the [Power Core](https://lawo.com/products/power-core/), can be tailored using On-Air Designer.
 
-Go to [lawo.com/products/diamond/](https://lawo.com/products/diamond/) to learn more.
+Go to [lawo.com/products/diamond/](https://lawo.com/products/diamond/) to learn more, or watch the launch video below.
+
+<div class="post-video"><iframe src="https://www.youtube.com/embed/PBbeLQncIk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
 <div class="post-image"><img src="/assets/images/portfolio/lawo-diamond/diamond-side-2.jpg"></div>
 <div class="post-image"><img src="/assets/images/portfolio/lawo-diamond/diamond-eq.jpg"></div>
