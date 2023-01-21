@@ -9,7 +9,7 @@ During my last few years at Calrec, I was tasked with leading design and develop
 
 The new surface was launched five years later, in 2022, evolving from these fundamental principals.
 
-My goal when I kicked off the Calrec Assist developments was to create a browser-based UI platform that could be reused across many different products and applications to support a consistent workflow, wherever it was used, and support reuse among the development teams. I had large format mixers in mind when I started Assist, so naturally, Argo was centred around this concept. This seems to have carried through to the final product. The visual style of the UI has been updated considerably since I left, and is arguably improved.
+My goal when I kicked off the Calrec Assist developments was to create a browser-based UI platform that could be reused across many different products and applications to support a consistent workflow, wherever it was used, and support reuse among the development teams. I had large format mixers in mind when I started Assist, so naturally, what later became Argo was built upon this concept. The visual style of the Assist UI has been updated considerably since I left, and is arguably improved.
 
 With the hardware surface for Argo, I envisioned a modular surface where the same components could be reused to construct different product variations. Each section of the surface would be completely self contained. To create a larger surface, just connect more self-contained sections together. This concept remains, although the design, range and potential combinations of panels has evolved since I left.
 

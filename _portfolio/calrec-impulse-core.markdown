@@ -8,7 +8,7 @@ launched: 2018
 
 I started work on the Impulse core in 2015. The broadcast industry was moving towards audio over IP, immersive and object-based audio, virtualisation, and remote production. It was clear that Calrec needed a powerful and flexible new platform to support the workflows and requirements that were likely to come along with these new technologies.
 
-When I left Calrec in 2017, I left the team with detailed concepts, designs, and specifications for the new core. The new core was launched one year later in 2018. I left before the final hardware was developed, and did not see the final product through to launch. I had no involvement in the industrial design or CMF, and the core and its integration into the product range continued to evolve before launch.
+When I left Calrec in 2017, I left the team with detailed concepts, designs, and specifications for the new core. The new core was launched one year later in 2018. I left before the final hardware was developed, and did not see the final product through to launch. I had no involvement in the industrial design or CMF, and the core and its integration into the product range continued to evolve after I left.
 
 The headline call-outs from the press release at launch were:
 
