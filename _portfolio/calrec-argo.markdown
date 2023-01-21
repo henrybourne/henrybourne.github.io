@@ -5,13 +5,21 @@ launched: 2022
 ---
 
 <div class="post-image"><img src="/assets/images/portfolio/calrec-argo/hero.jpg"></div>
-During my last few years at Calrec, I was tasked with leading design and development of the next generation of large format audio mixers. When I moved on, I left the company with detailed designs, specifications, and concepts, for them to execute. 
+During my last few years at Calrec, I was tasked with leading design and development of the next generation of large format audio mixers. When I left in 2017, I left the company with detailed concepts, designs, and specifications. 
 
-The new surface was launched in 2022, following closely my original designs.
+The new surface was launched five years later, in 2022, evolving from these fundamental principals.
+
+My goal when I kicked off the Calrec Assist developments was to create a browser-based UI platform that could be reused across many different products and applications to support a consistent workflow, wherever it was used, and support reuse among the development teams. I had large format mixers in mind when I started Assist, so naturally, Argo was centred around this concept. This seems to have carried through to the final product. The visual style of the UI has been updated considerably since I left, and is arguably improved.
+
+With the hardware surface for Argo, I envisioned a modular surface where the same components could be reused to construct different product variations. Each section of the surface would be completely self contained. To create a larger surface, just connect more self-contained sections together. This concept remains, although the design, range and potential combinations of panels has evolved since I left.
+
+I had no involvement with the execution of the physical hardware. I was around for initial surface hardware technology concepts, but claim no involvement in the industrial design direction or CMF.
 
 Much respect as always to the talented R&D team, in executing and delivering this concept to the world.
 
 Learn more at [calrec.com](https://calrec.com/shop/broadcast-audio-consoles/argo/)
+
+<p class="post-subtext">The final product images are taken from Calrec's website, and are not representative of the state of the product when my involvement ended.</p>
 
 <div class="post-image"><img src="/assets/images/portfolio/calrec-argo/surface-top-large.jpg"></div>
 <div class="post-image"><img src="/assets/images/portfolio/calrec-argo/surface-top-small.jpg"></div>
