@@ -5,10 +5,11 @@ permalink: /about/
 ---
 
 # Career
-## Lawo
-### Product Manager – Experience & Design
 
-I lead Experience & Design at Lawo. I’m helping Lawo’s brilliant team to make their innovative products more human. Watch this space.
+## Lawo
+### Senior Director, Experience & Design, CTO Office
+
+I lead Experience & Design at Lawo. I’m helping Lawo’s brilliant team to make their innovative products more human.
 
 [https://www.lawo.com](https://www.lawo.com)
 
@@ -54,7 +55,7 @@ You can learn more about these projects in my Portfolio.
 ## LIPA
 ### Visiting Professional
 
-I was a Visiting Professional for 12 years. I led a module on programming and audio processing for final year graduate students, comprising a basic introduction to C++, with the final assessment being the creation of a real-time audio unit plugin using JUCE. Most students had never written a single line of code prior to this module. The module ran for ten sessions, each three hours long. The high quality of output from this intensive period demonstrates my ability to effectively communicate, motivate, and teach.
+I was a Visiting Professional for 12 years. I led a module on programming and audio processing for final year graduate students, comprising a basic introduction to C++, with the final assessment being the creation of a real-time audio unit plugin using JUCE. 
 
 [https://www.lipa.ac.uk](https://www.lipa.ac.uk)
 
