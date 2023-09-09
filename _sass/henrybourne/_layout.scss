@@ -25,7 +25,7 @@
   height: 40px;
   box-sizing: border-box;
   position: absolute;
-  top: 0px; 
+  top: 0px;
   left: 0px;
   font-size: 24px;
   font-weight: 700;
@@ -79,7 +79,7 @@
   height: 40px;
   box-sizing: border-box;
   position: absolute;
-  top: 0px; 
+  top: 0px;
   right: 0px;
   padding: 0px;
   margin: 8px 32px;
@@ -272,7 +272,7 @@
   position: relative;
   height: calc(100vh - 56px) !important;
   width: 100%;
-  
+
   @include media-query($on-phone) {
     height: calc(100vh - 56px) !important;
   }
@@ -464,7 +464,7 @@
   border-radius: 16px;
   height: 128px;
   padding: 0px 32px;
-  
+
   @media (prefers-color-scheme: light) {
     box-shadow: $shadow-default-light;
     background-color: var(--background-color);
@@ -621,11 +621,37 @@
   }
 }
 
+// Lawo HOME Apps
+.portfolio-lawo-home-apps {
+  grid-column: span 3;
+  background: linear-gradient(45deg, rgba(4,126,175,0.9) 0%, rgba(4,154,213,0.9) 100%), url('/assets/images/noise.svg');
+
+  .portfolio-item-title {
+    color: #F5F5F5;
+  }
+
+  .portfolio-item-image {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    object-fit: cover;
+    object-position: middle;
+  }
+
+  @include media-query($on-tablet) {
+    grid-column: span 8;
+  }
+}
+
 // Lawo .edge
 .portfolio-lawo-edge {
-  grid-column: span 8;
+  grid-column: span 5;
   background: linear-gradient(45deg, rgba(4,126,175,0.9) 0%, rgba(4,154,213,0.9) 100%), url('/assets/images/noise.svg');
-  
+
   .portfolio-item-title {
     color: #F5F5F5;
   }
@@ -649,9 +675,9 @@
 
 // Lawo Home
 .portfolio-lawo-home {
-  grid-column: span 3;
+  grid-column: span 4;
   background: linear-gradient(0deg, rgba(220,0,107,0.9) 0%, rgba(220,0,107,0.9) 100%), url('/assets/images/noise.svg');
-  
+
   .portfolio-item-title {
     color: #F5F5F5;
   }
@@ -675,9 +701,9 @@
 
 // Lawo Diamond
 .portfolio-lawo-diamond {
-  grid-column: span 5;
+  grid-column: span 4;
   background-color: rgb(51, 51, 51);
-  
+
   .portfolio-item-title {
     color: #F5F5F5;
   }
@@ -691,7 +717,7 @@
     padding-top: 96px;
     padding-bottom: 32px;
     object-fit: contain;
-    
+
     @include media-query($on-phone) {
       padding-top: 56px;
       padding-bottom: 24px;
@@ -707,7 +733,7 @@
 .portfolio-lawo-mc2-ui-update {
   grid-column: span 8;
   background-color: rgb(0, 103, 160);
-  
+
   .portfolio-item-title {
     color: #F5F5F5;
   }
@@ -721,7 +747,7 @@
     padding-top: 96px;
     padding-bottom: 32px;
     object-fit: contain;
-    
+
     @include media-query($on-phone) {
       padding-top: 56px;
       padding-bottom: 24px;
@@ -755,9 +781,9 @@
     padding-bottom: 0px;
     object-fit: cover;
     object-position: top;
-    
+
     @include media-query($on-phone) {
-      object-position: top;  
+      object-position: top;
     }
   }
 
@@ -770,7 +796,7 @@
 .portfolio-bowers-wilkins-formation-flex {
   grid-column: span 4;
   background: linear-gradient(0deg, rgba(186,186,186,0.9) 0%, rgba(220,220,220,0.9) 100%), url('/assets/images/noise.svg');
-  
+
   .portfolio-item-title {
     color: #282828;
   }
@@ -785,7 +811,7 @@
     padding-bottom: 0px;
     object-fit: contain;
     object-position: bottom;
-    
+
     @include media-query($on-phone) {
       padding-top: 56px;
     }
@@ -847,7 +873,7 @@
 .portfolio-calrec-brio {
   grid-column: span 3;
   background: linear-gradient(0deg, rgba(60,60,60,0.9) 0%, rgba(80,80,80,0.9) 100%), url('/assets/images/noise.svg');
-  
+
   .portfolio-item-title {
     color: #F5F5F5;
   }
@@ -913,7 +939,7 @@
     padding-bottom: 0px;
     object-fit: contain;
     object-position: left bottom;
-    
+
     @include media-query($on-phone) {
       padding-top: 56px;
     }
@@ -943,7 +969,7 @@
     padding-bottom: 16px;
     object-fit: contain;
     object-position: right;
-    
+
     @include media-query($on-phone) {
       padding-top: 56px;
     }
@@ -973,7 +999,7 @@
     padding-bottom: 16px;
     object-fit: contain;
     object-position: right;
-    
+
     @include media-query($on-phone) {
       padding-top: 56px;
     }
@@ -1003,7 +1029,7 @@
     padding-bottom: 0;
     object-fit: cover;
     object-position: left bottom;
-    
+
     @include media-query($on-tablet) {
       padding-top: 96px;
       object-position: left top;
@@ -1038,7 +1064,7 @@
     padding-top: 64px;
     padding-bottom: 0px;
     object-fit: contain;
-    
+
     @include media-query($on-phone) {
       padding-top: 48px;
     }
@@ -1054,7 +1080,7 @@
   grid-column: span 4;
   background-repeat: no-repeat;
   background: linear-gradient(0deg, rgba(85,129,56,0.9) 40%, rgba(0,158,224,0.9) 100%), url('/assets/images/noise.svg');
-  
+
   .portfolio-item-title {
     color: #F5F5F5;
   }
@@ -1068,7 +1094,7 @@
     padding-top: 64px;
     padding-bottom: 0px;
     object-fit: contain;
-    
+
     @include media-query($on-phone) {
       padding-top: 48px;
     }
@@ -1100,7 +1126,7 @@
     padding-bottom: 16px;
     object-fit: contain;
     object-position: bottom;
-    
+
     @include media-query($on-phone) {
       padding-top: 56px;
     }
@@ -1130,7 +1156,7 @@
     padding-bottom: 32px;
     object-fit: contain;
     object-position: center;
-    
+
     @include media-query($on-phone) {
       padding-top: 48px;
       padding-bottom: 24px;
@@ -1161,7 +1187,7 @@
     padding-bottom: 32px;
     object-fit: contain;
     object-position: center;
-    
+
     @include media-query($on-phone) {
       padding-top: 48px;
       padding-bottom: 24px;
@@ -1279,7 +1305,7 @@
       margin-bottom: 16px;
     }
 
-    
+
   }
 
   .post-video {
@@ -1292,7 +1318,7 @@
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    
+
     @include media-query($on-phone) {
       margin-top: 16px;
       margin-bottom: 16px;
