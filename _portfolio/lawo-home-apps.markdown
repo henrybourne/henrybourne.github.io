@@ -18,6 +18,8 @@ Complementing the technical agility, the beauty of HOME apps lies in their simpl
 
 And of course, HOME was built with all of this in mind. The first version of HOME, launched a few years earlier, had all the necessary UI and workflow hooks in place so that when HOME apps launched, they dropped perfectly into place.
 
-Go to [lawo.com/products/home-solution-apps/](https://lawo.com/products/home-solution-apps/) to learn more, or watch the launch video below.
+Go to [lawo.com/products/home-solution-apps/](https://lawo.com/products/home-solution-apps/) to learn more, or watch the launch or product videos below.
+
+<div class="post-video"><iframe src="https://www.youtube.com/embed/aBsiTtQnw6c?si=-wO6zG2FAGEft_O7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
 <div class="post-video"><iframe src="https://www.youtube.com/embed/h1Wt06QrBSg?si=gjmhmoXPJYWDbE8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
