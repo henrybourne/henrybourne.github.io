@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-# I'm Henry
+# About
 
 During my career, I've discovered that I'm good at simplifying and abstracting complex technology, making it easier for people to use, and ultimately helping them to do their jobs. I have a particular interest in audio, and have been fortunate enough that my career has allowed me to work on some of the best and most advanced audio production products in the world.
 
