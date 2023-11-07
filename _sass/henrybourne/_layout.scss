@@ -621,6 +621,32 @@
   }
 }
 
+// Lawo Crystal
+.portfolio-lawo-crystal {
+  grid-column: span 8;
+  background: linear-gradient(180deg, rgba(255,204,0,0.9) 0%, rgba(255,204,0,0.9) 100%), url('/assets/images/noise.svg');
+
+  .portfolio-item-title {
+    color: #282828;
+  }
+
+  .portfolio-item-image {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    object-fit: contain;
+    object-position: middle;
+  }
+
+  @include media-query($on-tablet) {
+    grid-column: span 8;
+  }
+}
+
 // Lawo HOME Apps
 .portfolio-lawo-home-apps {
   grid-column: span 3;
@@ -1318,6 +1344,14 @@
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 8px;
+
+    @media (prefers-color-scheme: light) {
+      box-shadow: $shadow-default-light;
+    }
+    @media (prefers-color-scheme: dark) {
+      box-shadow: $shadow-default-dark;
+    }
 
     @include media-query($on-phone) {
       margin-top: 16px;
@@ -1330,6 +1364,7 @@
       width: 100%;
       height: 100%;
       border: 0;
+      border-radius: 8px;
     }
   }
 
