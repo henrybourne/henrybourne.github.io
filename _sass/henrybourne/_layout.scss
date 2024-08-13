@@ -621,10 +621,39 @@
   }
 }
 
+// Lawo VSC
+.portfolio-lawo-vsc {
+  grid-column: span 4;
+  background: url('/assets/images/portfolio/lawo-vsc/card.jpg');
+  background-size: cover;
+  background-position: bottom;
+
+  .portfolio-item-title {
+    color: #F5F5F5;
+  }
+
+  .portfolio-item-image {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    object-fit: contain;
+    object-position: middle;
+  }
+
+  @include media-query($on-tablet) {
+    grid-column: span 8;
+  }
+}
+
 // Lawo Crystal
 .portfolio-lawo-crystal {
-  grid-column: span 8;
-  background: linear-gradient(180deg, rgba(255,204,0,0.9) 0%, rgba(255,204,0,0.9) 100%), url('/assets/images/noise.svg');
+  grid-column: span 4;
+  //background: linear-gradient(180deg, rgba(255,204,0,0.9) 0%, rgba(255,204,0,0.9) 100%), url('/assets/images/noise.svg');
+  background: linear-gradient(180deg, rgba(229, 229, 229, 0.9) 0%, rgba(229,229,229,0.9) 100%), url('/assets/images/noise.svg');
 
   .portfolio-item-title {
     color: #282828;
